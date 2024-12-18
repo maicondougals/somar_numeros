@@ -1,33 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão Colorido</title>
-    <style>
-      *{
-        text-align: center;
-
-        margin: 0 auto;
-      }
-      button{
-        width: 100px;
-        height: 50px;
-      }
-      #lampada{
-        width: 200px;
-        height: 200px;
-        background-color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Somar Numeros</title>
 </head>
 <body>
+    <main>
     <h1>Somar valores</h1>
     <input type="number" name="num1" id="num1">+
     <input type="number" name="num2" id="num2">
     <input type="button" value="Somar" onclick="somar()">
     <h1 id="resultado">0</h1>
-
+    </main>
 
 
     <script>
@@ -43,7 +30,7 @@
         var soma = numero1 + numero2
        
 
-        res.innerText = soma
+        res.innerText = soma.toFixed(2)
       }
 
       
